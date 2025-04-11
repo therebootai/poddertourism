@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+
+@theme inline {
+  --color-site-primary: #db5d16;
+  --color-site-secondary: #1891dd;
+  --color-site-black: #333333;
+  --color-site-gray: #666666;
+
+  --background-image-site-hover-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  --background-image-site-nav-gradient: linear-gradient(
+    90deg,
+    #fff3ec 0%,
+    #fff 50%,
+    #e8f6ff 100%
+  );
+
+  --shadow-custom-light: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  --font-josefin-sans: var(--font-josefin-sans);
+
+  --breakpoint-xlg: 90rem;
+  --breakpoint-xxl: 120rem;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-josefin-sans;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
